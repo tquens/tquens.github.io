@@ -7,6 +7,8 @@
     />
     <link rel="stylesheet" href="./style.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.0.4/fuse.min.js"></script>
+    <script src="https://unpkg.com/ag-grid-community/dist/ag-grid-community.min.js"></script>
+    <script src="main.js"></script>
     <title>TQUENS - Docs</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -482,10 +484,12 @@
 
           <!-- Grid System Section -->
 
-          <!-- <div id="grid" class="card fluid">
+          <div id="grid" class="card fluid">
           <h2 class="section double-padded">Grid system</h2>
 
-          <div class="section">
+          <div id="myGrid" style="height: 600px; width:1200px;" class="ag-theme-alpine"></div>
+
+          <!-- <div class="section">
             <p>The grid system of <strong>mini.css</strong> utilizes the <a
                 href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">Flexbox layout</a> to
               provide you with a simple, modern, responsive layout system for your web apps. Like most modern CSS
@@ -498,8 +502,8 @@
               <li>Columns (<code>col-*-*</code>) are placed inside rows and they can be customized to display
                 differently on different screen sizes, make use of fluid layouts, use offsets or change ordering.</li>
             </ul>
-          </div>
-          <div class="section">
+          </div> -->
+          <!-- <div class="section">
             <h3>Example</h3>
             <div class="container" style="padding: 0.25rem">
               <div class="row">
@@ -564,8 +568,8 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="section double-padded prefiller-example">
+          </div> -->
+          <!-- <div class="section double-padded prefiller-example">
             <h3>Sample code</h3>
             <pre><span class="code-line"><span class="highlight-a">&lt;div</span> <span class="highlight-b">class</span>=<span class="highlight-c">&quot;container&quot;</span><span class="highlight-a">&gt;</span></span>
 <span class="code-line">  <span class="highlight-a">&lt;div</span> <span class="highlight-b">class</span>=<span class="highlight-c">&quot;row&quot;</span><span class="highlight-a">&gt;</span></span>
@@ -965,8 +969,8 @@
                   layouts, as the predefined layout will most likely override the width modifier of the column.</p>
               </div>
             </div>
-          </div>
-          <div class="section double-padded">
+          </div> -->
+          <!-- <div class="section double-padded">
             <h3>Notes</h3>
             <ul>
               <li><strong>mini.css</strong> uses a mobile-first approach in its grid system, so you do not have to
@@ -991,15 +995,15 @@
                 sizes that are necessary. Remember to also specify a column width or use a predefined layout before
                 applying these modifiers.</li>
             </ul>
-          </div>
-          <div class="section double-padded">
+          </div> -->
+          <!-- <div class="section double-padded">
             <h3>Customization</h3>
             <ul>
               <li>Universal padding for elements can be changed globally by changing the value of the
                 <code>--universal-padding</code> variable. This only affects the padding of the container.</li>
             </ul>
-          </div>
-        </div><br /> -->
+          </div> -->
+        </div><br />
 
           <!-- Card Section -->
           <!-- <div id="cards" class="card fluid">
@@ -1521,7 +1525,7 @@
   <span class="code-line">  <span class="highlight-a">&lt;div </span><span class="highlight-b">className=<span class="highlight-c">&quot;btn-wrapper&quot;</span></span><span class="highlight-a">&gt;</span></span>
   <span class="code-line">  <span class="highlight-a">  &lt;div </span><span class="highlight-b">className=<span class="highlight-c">&quot;btn-text-wrapper&quot;</span></span><span class="highlight-a">&gt;</span></span>
   <span class="code-line">  <span class="highlight-a">    &lt;p</span><span class="highlight-a">&gt;</span></span>
-  <span class="code-line">Button</span>
+  <span class="code-line">        Button</span>
   <span class="code-line"><span class="highlight-a">      &lt;/p&gt;</span></span>
   <span class="code-line"><span class="highlight-a">    &lt;/div&gt;</span></span>
   <span class="code-line"><span class="highlight-a">  &lt;/div&gt;</span></span>
