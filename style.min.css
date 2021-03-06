@@ -2733,3 +2733,61 @@ main .sub-menu-wrapper .button .btn-wrapper {
     margin: 0px !important;
   }
 }
+
+
+.btn {
+  border: thin solid #eee;
+  background-color: white;
+  border-radius: 6px;
+}
+.btn:hover {
+  background-color: #66CCCC;
+
+}
+.btn:hover .btn-text-wrapper {
+  color: white;
+}
+
+.button.fixed-button.btn-action {
+  display: inline-block;
+  color: inherit;
+  transition: color .15s;
+}
+
+.fixed-button .btn-wrapper {
+  width: 120px;
+  justify-content: center;
+}
+
+.btn-wrapper {
+  width: 140px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  height: 30px !important;
+  text-decoration: none;
+}
+
+.btn-text-wrapper {
+  margin-left: 10px;
+  margin-right: 10px;
+  white-space: nowrap;
+}
+
+.button {
+  display: inline-block;
+  border: solid thin #eee;
+  border-radius: 6px;
+  color: inherit;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out !important;
+  cursor: pointer;
+}
+
+.button .btn-wrapper {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 40px;
+  text-decoration: none;
+}
