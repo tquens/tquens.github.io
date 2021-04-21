@@ -5,7 +5,11 @@
       href="https://fonts.googleapis.com/css?family=Inconsolata:400,700|Poppins:400,400i,500,700,700i&amp;subset=latin-ext"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./style.min.css" />
+    <link rel="stylesheet" href="./tquens-main.css" />
+    <link rel="stylesheet" href="./tquens-symbol.css" />
+    <link rel="stylesheet" href="./tquens-button.css" />
+    <link rel="stylesheet" href="./tquens-grid.css" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.0.4/fuse.min.js"></script>
     <script src="https://unpkg.com/ag-grid-community/dist/ag-grid-community.min.js"></script>
     <script src="main.js"></script>
@@ -490,7 +494,7 @@
           <h2 class="section double-padded">Grid system</h2>
 
           <div class="section">
-            <p>The grid system of <strong>tquens</strong> utilizes the <a
+            <p>The grid system of <strong>TQUENS</strong> utilizes the <a
                 href="https://www.ag-grid.com/documentation/react/getting-started/" target="_blank">AgGrid layout</a> to
               provide you with a simple, modern, responsive layout system for your web apps.</p>
             <!-- <ul>
@@ -504,7 +508,7 @@
           </div>
           <div class="section">
             <h3>Example</h3>
-            <div id="myGrid" style="height: 600px; width:1200px;" class="ag-theme-alpine"></div>
+            <div id="mainGrid" style="height: 600px; width:1200px;" class="ag-theme-material"></div>
             <!-- <div class="container" style="padding: 0.25rem">
               <div class="row">
                 <div class="col-sm-1">
@@ -599,91 +603,440 @@
             <p>You can use the grid system to create a responsive <a
                 href="https://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/"
                 target="_blank">media object</a> in one of many ways. Below is a simple example of AgGrid:
-            <pre><span class="code-line"><span class="highlight-a">&lt;div</span> <span class="highlight-b">class</span>=<span class="highlight-c">&quot;ag-theme-alpine&quot;</span><span class="highlight-b"> id</span>=<span class="highlight-c">&quot;myGrid&quot;</span><span class="highlight-b"> style</span>=<span class="highlight-c">&quot;height: 600px; width:1200px;&quot;</span><span class="highlight-a">/&gt;</span></span>
+            <pre><span class="code-line"><span class="highlight-a">&lt;div</span> <span class="highlight-b">class</span>=<span class="highlight-c">&quot;ag-theme-material&quot;</span><span class="highlight-b"> id</span>=<span class="highlight-c">&quot;myGrid&quot;</span><span class="highlight-b"> style</span>=<span class="highlight-c">&quot;height: 600px; width:1200px;&quot;</span><span class="highlight-a">/&gt;</span></span>
           </div>
           <div class="section double-padded prefiller-example">
             <h3>Columns</h3>
-            <h4>Action column</h4>
-            <p>There are checbox, dropdown, toggle & dropdown, and button action columns</p>
-            <!-- <p>Each column class is defined by specifying a screen size (small - <code>sm</code>, medium -
-              <code>md</code> or large - <code>lg</code>) and a column width (a value between <code>1</code> and
-              <code>12</code> or you can omit it for a fluid column), separated by dashes (e.g. <code>.col-sm-6</code>
-              for a 6-wide column on a small screen). Using these you can apply different layouts for different screen
-              sizes, by altering the width of columns, using multiple classes. Note that column widths are applied
-              recursively, meaning that if you do not specify a width for a specific screen size the column will use the
-              width applied for the previous largest screen size.</p> -->
+            <h4>Image column</h4>
+            <!-- <p>There are checbox, dropdown, toggle & dropdown, and button action columns</p> -->
             <h5>Example</h5>
             <div class="container" style="padding: 0.25rem">
-            <div id="columns-action-button" style="height: 120px; width:1250px;" class="ag-theme-alpine"></div>
-
-              <!-- <div class="row">
-                <div class="col-sm-12 col-md">
-                  <div class="row">
-                    <div class="col-sm">
-                      <h6 style="text-align:center">Small screen layout</h6>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-sm">
-                      <div class="box-colored">sm-12</div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-sm-12">
-                      <div class="box-colored" style="height: 3.75rem">sm-12 md-8</div>
-                    </div>
-                    <div class="col-sm-12">
-                      <div class="box-colored" style="height: 2rem">sm-12 md-4</div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-sm">
-                      <div class="box-colored">sm-12</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-12 col-md">
-                  <div class="row">
-                    <div class="col-sm">
-                      <h6 style="text-align:center">Medium/Large screen layout</h6>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-sm">
-                      <div class="box-colored">sm-12</div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-sm-8">
-                      <div class="box-colored" style="height: 8rem">sm-12 md-8</div>
-                    </div>
-                    <div class="col-sm-4">
-                      <div class="box-colored" style="height: 8rem">sm-12 md-4</div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-sm">
-                      <div class="box-colored">sm-12</div>
-                    </div>
-                  </div>
-                </div>
-              </div> -->
+            <div id="imageGrid" style="height: 160px; width:110px;" class="ag-theme-material"></div>
             </div>
             <h5>Sample code</h5>
-            <pre><span class="code-line"><span class="highlight-a">&lt;div</span> <span class="highlight-b">class</span>=<span class="highlight-c">&quot;container&quot;</span><span class="highlight-a">&gt;</span></span>
-<span class="code-line">  <span class="highlight-a">&lt;div</span> <span class="highlight-b">class</span>=<span class="highlight-c">&quot;row&quot;</span><span class="highlight-a">&gt;</span></span>
-<span class="code-line">    <span class="highlight-a">&lt;div</span> <span class="highlight-b">class</span>=<span class="highlight-c">&quot;col-sm-12 col-md-3 col-lg-2&quot;</span><span class="highlight-a">&gt;&lt;/div&gt;</span></span>
-<span class="code-line">    <span class="highlight-a">&lt;div</span> <span class="highlight-b">class</span>=<span class="highlight-c">&quot;col-sm-12 col-md-5 col-lg-7&quot;</span><span class="highlight-a">&gt;&lt;/div&gt;</span></span>
-<span class="code-line">    <span class="highlight-a">&lt;div</span> <span class="highlight-b">class</span>=<span class="highlight-c">&quot;col-sm-12 col-md-4 col-lg-3&quot;</span><span class="highlight-a">&gt;&lt;/div&gt;</span></span>
-<span class="code-line">  <span class="highlight-a">&lt;/div&gt;</span></span>
-<span class="code-line">  <span class="highlight-a">&lt;div</span> <span class="highlight-b">class</span>=<span class="highlight-c">&quot;row&quot;</span>&gt;</span>
-<span class="code-line">    <span class="highlight-a">&lt;div</span> <span class="highlight-b">class</span>=<span class="highlight-c">&quot;col-sm col-lg-10&quot;</span><span class="highlight-a">&gt;&lt;/div&gt;</span></span>
-<span class="code-line">    <span class="highlight-a">&lt;div</span> <span class="highlight-b">class</span>=<span class="highlight-c">&quot;col-sm-4 col-md&quot;</span><span class="highlight-a">&gt;&lt;/div&gt;</span></span>
+            <pre><span class="code-line"><span class="highlight-a">&lt;div</span> <span class="highlight-b">className</span>=<span class="highlight-c">&quot;cell-product-image&quot;</span><span class="highlight-a">&gt;</span></span>
+<span class="code-line">  <span class="highlight-a">&lt;div</span> <span class="highlight-b">className</span>=<span class="highlight-c">&quot;cell-wrapper&quot;</span><span class="highlight-a">&gt;</span></span>
+<span class="code-line">    <span class="highlight-a">&lt;div</span> <span class="highlight-b">className</span>=<span class="highlight-c">&quot;cell-content&quot;</span><span class="highlight-a">&gt;</span></span>
+<span class="code-line">      <span class="highlight-a">&lt;div</span> <span class="highlight-b">className</span>=<span class="highlight-c">&quot;visual-info product-image&quot;</span><span class="highlight-a">&gt;</span></span>
+<span class="code-line">        <span class="highlight-a">&lt;img class="img-fluid" src=""&gt;</span></span>
+<span class="code-line">      <span class="highlight-a">&lt;/div&gt;</span></span>
+<span class="code-line">    <span class="highlight-a">&lt;/div&gt;</span></span>
 <span class="code-line">  <span class="highlight-a">&lt;/div&gt;</span></span>
 <span class="code-line"><span class="highlight-a">&lt;/div&gt;</span></span></pre><br />
 
+<h5>Sample cellRenderer code</h5>
+<pre>
+  <span>cellRenderer: params => {
+    const cell = document.createElement('div');
+    cell.className = "cell-product-image";
+    
+    const cellWapper = document.createElement('div');
+    cellWapper.className = "cell-wrapper";
 
-            <!-- <h4>Predefined layouts</h4>
+    const cellContent = document.createElement('div');
+    cellContent.className = "cell-content";
+
+    const visualInfo = document.createElement('div');
+    visualInfo.className = "visual-info product-image";
+
+    cellContent.appendChild(visualInfo);
+    cellWapper.appendChild(cellContent);
+    cell.appendChild(cellWapper);
+
+    const image = document.createElement('img');
+    image.className = "img-fluid";
+    const icon = document.createElement('i');
+    icon.className = "far fa-images";
+
+    if(params.value && params.value.length) {
+        image.setAttribute("src", params.value);
+        visualInfo.appendChild(image);
+    } else {
+        visualInfo.appendChild(icon);
+    }
+    
+    return cell;
+}
+</span>
+</pre>
+<br />
+<h4>Date column</h4>
+            <!-- <p>There are checbox, dropdown, toggle & dropdown, and button action columns</p> -->
+            <h5>Example</h5>
+            <div class="container" style="padding: 0.25rem">
+            <div id="dateGrid" style="height: 160px; width:110px;" class="ag-theme-material"></div>
+            </div>
+            <h5>Sample code</h5>
+            <pre><span class="code-line"><span class="highlight-a">&lt;div</span> <span class="highlight-b">className</span>=<span class="highlight-c">&quot;cell-date-updated&quot;</span><span class="highlight-a">&gt;</span></span>
+<span class="code-line">  <span class="highlight-a">&lt;div</span> <span class="highlight-b">className</span>=<span class="highlight-c">&quot;cell-wrapper&quot;</span><span class="highlight-a">&gt;</span></span>
+<span class="code-line">    <span class="highlight-a">&lt;div</span> <span class="highlight-b">className</span>=<span class="highlight-c">&quot;cell-content&quot;</span><span class="highlight-a">&gt;</span></span>
+<span class="code-line">      <span class="highlight-a">&lt;div</span> <span class="highlight-b">className</span>=<span class="highlight-c">&quot;text-content row&quot;</span><span class="highlight-a">&gt;</span></span>
+<span class="code-line">        <span class="highlight-a">&lt;span className="cell-text-main col">3/31/2021&lt;span&gt;</span></span>
+<span class="code-line">      <span class="highlight-a">&lt;/div&gt;</span></span>
+<span class="code-line">    <span class="highlight-a">&lt;/div&gt;</span></span>
+<span class="code-line">  <span class="highlight-a">&lt;/div&gt;</span></span>
+<span class="code-line"><span class="highlight-a">&lt;/div&gt;</span></span></pre><br />
+
+<h5>Sample cellRenderer code</h5>
+<pre>
+  <span>cellRenderer: params => {
+    const cell = document.createElement('div');
+    cell.className = "cell-date-updated";
+
+    const cellWrapper = document.createElement('div');
+    cellWrapper.className = "cell-wrapper";
+    cell.appendChild(cellWrapper);
+
+    const cellContent = document.createElement('div');
+    cellContent.className = "cell-content";
+    cellWrapper.appendChild(cellContent);
+
+    const textContent = document.createElement('div');
+    textContent.className = "text-content row";
+    cellContent.appendChild(textContent);
+
+    const date_created = document.createElement('span');
+    date_created.className = "cell-text-main col";
+
+    const date_statusChanged = document.createElement('span');
+    date_statusChanged.className = "cell-text-sub-alt col";
+
+    const appendZero = num => {
+        if(num !== 0 && !num) {
+            return "00";
+        }
+
+        const str = num.toString();
+        if(str.length < 2) {
+            return "0" + str;
+        } else {
+            return str;
+        }
+    }
+
+    const date_created_date = params.value && new Date(params.value) ? new Date(params.value) : null;
+    const date_statusChanged_date = 
+        params.data.statusChangedDate && new Date(params.data.statusChangedDate) ? new Date(params.data.statusChangedDate) : null;
+
+    date_created.innerText = 
+        date_created_date ? date_created_date.toLocaleDateString() : "-"; // + " " + appendZero(date_created_date.getHours()) + ":" + appendZero(date_created_date.getMilliseconds()) : '-';
+    date_statusChanged.innerText = 
+        date_statusChanged_date ? date_statusChanged_date.toLocaleDateString() : "-"; // + " " + appendZero(date_statusChanged_date.getHours()) + ":" + appendZero(date_statusChanged_date.getMilliseconds()) : '-';
+
+
+    if(date_created.innerText == "Invalid date"|| date_created.innerText == "Invalid Date")
+        date_created.innerText = "-"
+
+    textContent.appendChild(date_created);
+    // textContent.appendChild(date_statusChanged);
+
+    return cell;
+  }
+</span>
+</pre>
+<br />
+<h4>Action column</h4>
+            <p>There are inbound, outbound, copy, checbox, dropdown, toggle & dropdown, and button action columns.</p>
+            <p>You should update <code>cellRenderer</code> in <code>columnDefs</code> in order to have this.</p>
+            <h5>Detail page inbound / Outbound link</h5>
+            <h6>Example</h6>
+            <div class="container" style="padding: 0.25rem">
+            <div id="actionGrid" style="height: 380px; width:700px;" class="ag-theme-material"></div>
+            </div>
+            <h5>Sample code</h5>
+            <pre><span class="code-line"><span class="highlight-a">// Inbound</span> </span>
+<span class="code-line"><span class="highlight-a">&lt;div</span> <span class="highlight-b">className</span>=<span class="highlight-c">&quot;cell-sku&quot;</span><span class="highlight-a">&gt;</span></span>
+<span class="code-line">  <span class="highlight-a">&lt;div</span> <span class="highlight-b">className</span>=<span class="highlight-c">&quot;cell-link-wrapper&quot;</span><span class="highlight-a">&gt;</span></span>
+<span class="code-line">    <span class="highlight-a">&lt;div</span> <span class="highlight-b">className</span>=<span class="highlight-c">&quot;cell-content&quot;</span><span class="highlight-a">&gt;</span></span>
+<span class="code-line">      <span class="highlight-a">&lt;div</span> <span class="highlight-b">className</span>=<span class="highlight-c">&quot;text-content&quot;</span><span class="highlight-a">&gt;</span></span>
+<span class="code-line">        <span class="highlight-a">&lt;span&gt;ACS012345&lt;span&gt;</span></span>
+<span class="code-line">        <span class="highlight-a">&lt;div</span> <span class="highlight-b">className</span>=<span class="highlight-c">&quot;call-to-action cell-action-view-detail&quot;</span><span class="highlight-a">&gt;</span></span>
+<span class="code-line">          <span class="highlight-a">&lt;i className="far fa-arrow-right"&gt;&lt;i&gt;</span></span>
+<span class="code-line">        <span class="highlight-a">&lt;/div&gt;</span></span>
+<span class="code-line">      <span class="highlight-a">&lt;/div&gt;</span></span>
+<span class="code-line">    <span class="highlight-a">&lt;/div&gt;</span></span>
+<span class="code-line">  <span class="highlight-a">&lt;/div&gt;</span></span>
+<span class="code-line"><span class="highlight-a">&lt;/div&gt;</span></span></pre><br />
+
+<h5>Sample cellRenderer code</h5>
+<pre>
+  <span>cellRenderer: params => {
+          const cell = document.createElement('div');
+          cell.className = "cell-sku";
+
+          const cellLinkWrapper = document.createElement('a');
+          cellLinkWrapper.className = "cell-link-wrapper";
+
+          cell.appendChild(cellLinkWrapper);
+
+          const cellContent = document.createElement('div');
+          cellContent.className = "cell-content";
+
+          cellLinkWrapper.appendChild(cellContent);
+
+          const textContent = document.createElement('div');
+          textContent.className = "text-content";
+
+          cellContent.appendChild(textContent);
+
+          const span = document.createElement('span');
+          // sku.className = "cell-text-main sku";
+
+          span.innerText = params.value ? params.value : "";
+          textContent.appendChild(span);
+
+
+          const cellAction = document.createElement('div');
+          cellAction.className = "call-to-action cell-action-view-detail";
+
+          textContent.appendChild(cellAction);
+
+          cell.setAttribute("href", "#");
+          cell.addEventListener("click", e => {
+              e.preventDefault();
+              setSelectedProduct(params.data);
+
+              if(!document.querySelectorAll(".main-detail-wrapper.open").length) {
+                  setIsDetailOpen(true);
+              } else {
+                  setTriggerUpdateDetail(true);
+              }
+          })
+
+          const icon = document.createElement('i');
+          icon.className = "far fa-arrow-right";
+
+          cellAction.appendChild(icon);
+          return cell;
+      }
+</span>
+</pre>
+<br />
+
+<pre><span class="code-line"><span class="highlight-a">// Outbound</span> </span>
+<span class="code-line"><span class="highlight-a">&lt;div</span> <span class="highlight-b">className</span>=<span class="highlight-c">&quot;cell-asin&quot;</span><span class="highlight-a">&gt;</span></span>
+<span class="code-line">  <span class="highlight-a">&lt;div</span> <span class="highlight-b">className</span>=<span class="highlight-c">&quot;cell-link-wrapper&quot; href="https://www....&quot;</span><span class="highlight-a">&gt;</span></span>
+<span class="code-line">    <span class="highlight-a">&lt;div</span> <span class="highlight-b">className</span>=<span class="highlight-c">&quot;cell-content&quot;</span><span class="highlight-a">&gt;</span></span>
+<span class="code-line">      <span class="highlight-a">&lt;div</span> <span class="highlight-b">className</span>=<span class="highlight-c">&quot;text-content&quot;</span><span class="highlight-a">&gt;</span></span>
+<span class="code-line">        <span class="highlight-a">&lt;a&gt;B08MPSSPB&lt;a&gt;</span></span>
+<span class="code-line">        <span class="highlight-a">&lt;div</span> <span class="highlight-b">className</span>=<span class="highlight-c">&quot;call-to-action cell-action-external-link&quot;</span><span class="highlight-a">&gt;</span></span>
+<span class="code-line">          <span class="highlight-a">&lt;i className="far fa-external-link"&gt;&lt;i&gt;</span></span>
+<span class="code-line">        <span class="highlight-a">&lt;/div&gt;</span></span>
+<span class="code-line">      <span class="highlight-a">&lt;/div&gt;</span></span>
+<span class="code-line">      <span class="highlight-a">&lt;span&gt;880123456789&lt;span&gt;</span></span>
+<span class="code-line">    <span class="highlight-a">&lt;/div&gt;</span></span>
+<span class="code-line">  <span class="highlight-a">&lt;/div&gt;</span></span>
+<span class="code-line"><span class="highlight-a">&lt;/div&gt;</span></span></pre><br />
+
+<h5>Sample cellRenderer code</h5>
+<pre>
+  <span>cellRenderer: params => {
+    const cell = document.createElement('div');
+    cell.className = "cell-asin";
+
+    const cellLinkWrapper = document.createElement('a');
+    cellLinkWrapper.className = "cell-link-wrapper";
+    cell.appendChild(cellLinkWrapper);
+    
+    const cellContent = document.createElement('div');
+    cellContent.className = "cell-content";
+    cellLinkWrapper.appendChild(cellContent);
+
+    const textContent = document.createElement('div');
+    textContent.className = "text-content";
+    cellContent.appendChild(textContent);
+
+    const span = document.createElement('span');
+    const asin = document.createElement('a');
+
+    const cellAction = document.createElement('a');
+    cellAction.className = "call-to-action cell-action-external-link";
+
+    const channelStrArr = params.data ? params.data.channelStore ? params.data.channelStore.split(' ') : ["US"] : ["US"];
+    const country = channelStrArr[channelStrArr.length - 1].toUpperCase();
+    const ean = document.createElement('span');
+    // ean.className = "cell-text-sub-alt";
+    ean.style.color = "rgb(153, 153, 153)";
+    ean.style.fontWeight = "700";
+
+    asin.innerText = params.value && params.value.length ? params.value : '-';
+    ean.innerText = params.data.ean && params.data.ean.length ? params.data.ean : '-';
+
+    asin.style.fontWeight = "700";
+
+    textContent.appendChild(asin);
+
+
+    textContent.appendChild(cellAction);
+
+    const icon = document.createElement('i');
+    icon.className = "far fa-external-link";
+    cellAction.appendChild(icon);
+    
+    cellContent.appendChild(ean);
+    // cell.appendChild(ean);
+
+    if(country && params.value) {
+        switch(country) {
+            case 'US':
+                cellLinkWrapper.setAttribute("href", "https://www.amazon.com/dp/" + params.value);
+                break;
+            case 'CA':
+                cellLinkWrapper.setAttribute("href", "https://www.amazon.ca/dp/" + params.value);
+                break;
+            case 'MX':
+                cellLinkWrapper.setAttribute("href", "https://www.amazon.com.mx/dp/" + params.value);
+                break;
+            case 'UK':
+                cellLinkWrapper.setAttribute("href", "https://www.amazon.co.uk/dp/" + params.value);
+                break;
+            case 'DE':
+                cellLinkWrapper.setAttribute("href", "https://www.amazon.de/dp/" + params.value);
+                break;
+            case 'FR':
+                cellLinkWrapper.setAttribute("href", "https://www.amazon.fr/dp/" + params.value);
+                break;
+            case 'IT':
+                cellLinkWrapper.setAttribute("href", "https://www.amazon.it/dp/" + params.value);
+                break;
+            case 'ES':
+                cellLinkWrapper.setAttribute("href", "https://www.amazon.es/dp/" + params.value);
+                break;
+            case 'NL':
+                cellLinkWrapper.setAttribute("href", "https://www.amazon.nl/dp/" + params.value);
+                break;
+            case 'IN':
+                cellLinkWrapper.setAttribute("href", "https://www.amazon.in/dp/" + params.value);
+                break;
+            case 'JP':
+                cellLinkWrapper.setAttribute("href", "https://www.amazon.co.jp/dp/" + params.value);
+                break;
+            default:
+                cellLinkWrapper.setAttribute("href", "https://www.amazon.com/dp/" + params.value);
+                break;
+        }
+        cellLinkWrapper.setAttribute("target", "_blank");
+    } else {
+        cellLinkWrapper.setAttribute("href", "#");
+        cellLinkWrapper.addEventListener("click", e => {
+            e.preventDefault();
+        })
+    }
+
+    return cell;
+  }
+</span>
+</pre>
+<br />
+
+<pre><span class="code-line"><span class="highlight-a">// Button</span> </span>
+<span class="code-line"><span class="highlight-a">&lt;div</span> <span class="highlight-b">className</span>=<span class="highlight-c">&quot;cell-download&quot;</span><span class="highlight-a">&gt;</span></span>
+<span class="code-line">  <span class="highlight-a">&lt;div</span> <span class="highlight-b">className</span>=<span class="highlight-c">&quot;cell-wrapper&quot;</span><span class="highlight-a">&gt;</span></span>
+<span class="code-line">    <span class="highlight-a">&lt;div</span> <span class="highlight-b">className</span>=<span class="highlight-c">&quot;cell-content&quot;</span><span class="highlight-a">&gt;</span></span>
+<span class="code-line">      <span class="highlight-a">&lt;div</span> <span class="highlight-b">className</span>=<span class="highlight-c">&quot;button fixed-button btn-action download&quot;</span><span class="highlight-a">&gt;</span></span>
+<span class="code-line">        <span class="highlight-a">&lt;div</span> <span class="highlight-b">className</span>=<span class="highlight-c">&quot;btn-wrapper&quot;</span><span class="highlight-a">&gt;</span></span>
+<span class="code-line">          <span class="highlight-a">&lt;div</span> <span class="highlight-b">className</span>=<span class="highlight-c">&quot;btn-wrapper&quot;</span><span class="highlight-a">&gt;</span></span>
+<span class="code-line">            <span class="highlight-a">&lt;p&gt;Completed&lt;p&gt;</span></span>
+<span class="code-line">          <span class="highlight-a">&lt;/div&gt;</span></span>
+<span class="code-line">        <span class="highlight-a">&lt;/div&gt;</span></span>
+<span class="code-line">      <span class="highlight-a">&lt;/div&gt;</span></span>
+<span class="code-line">    <span class="highlight-a">&lt;/div&gt;</span></span>
+<span class="code-line">  <span class="highlight-a">&lt;/div&gt;</span></span>
+<span class="code-line"><span class="highlight-a">&lt;/div&gt;</span></span></pre><br />
+
+<h5>Sample cellRenderer code</h5>
+<pre>
+  <span>cellRenderer: function (params) {
+    const cellMain = document.createElement('div');
+    const cellWrapper = document.createElement('div');
+    const cellContent = document.createElement('div');
+    cellMain.className = "cell-download";
+    cellWrapper.className = "cell-wrapper";
+    cellContent.className = "cell-content";
+
+    const cell = document.createElement('div');
+    cell.className = params.value === "Completed" || params.value === "Cancelled" ? "button fixed-button btn-action download" : "button fixed-button btn-action creating"
+    if(params.value && params.value === "Completed") {
+        cell.setAttribute("href", params.data.link);
+        cell.setAttribute("target", "_blank");
+    }
+
+    cellMain.appendChild(cellWrapper);
+    cellWrapper.appendChild(cellContent);
+    cellContent.appendChild(cell);
+
+    const btnWrapper = document.createElement('div');
+
+    const btnTextWrapper = document.createElement('div');
+    const text = document.createElement('p');
+
+    btnWrapper.className = "btn-wrapper";
+    btnWrapper.style.backgroundColor = "#fff";
+    btnWrapper.style.borderRadius = "4px";
+    btnWrapper.style.overflow = "hidden";
+    btnTextWrapper.className = "btn-text-wrapper";
+    text.innerText = params.value;
+
+    btnTextWrapper.appendChild(text);
+    btnWrapper.appendChild(btnTextWrapper);
+    cell.appendChild(btnWrapper);
+
+    return cellMain;
+}
+</span>
+</pre>
+<br />
+
+<pre><span class="code-line"><span class="highlight-a">// Copy</span> </span>
+<span class="code-line"><span class="highlight-a">&lt;div</span> <span class="highlight-b">className</span>=<span class="highlight-c">&quot;cell-copy&quot;</span><span class="highlight-a">&gt;</span></span>
+<span class="code-line">  <span class="highlight-a">&lt;span&gt;8247295261&lt;span&gt;</span></span>
+<span class="code-line">  <span class="highlight-a">&lt;button</span> <span class="highlight-b">type</span>=<span class="highlight-c">&quot;button&quot;</span><span class="highlight-a">&gt;</span></span>
+<span class="code-line">    <span class="highlight-a">&lt;i className="fal fa-paste"&gt;</span></span>
+<span class="code-line">  <span class="highlight-a">&lt;/button&gt;</span></span>
+<span class="code-line"><span class="highlight-a">&lt;/div&gt;</span></span></pre><br />
+
+<h5>Sample cellRenderer code</h5>
+<pre>
+  <span>cellRenderer: (params) => {
+    const cell = document.createElement('div');
+    cell.className = "cell-copy";
+    const mainLink = document.createElement('span');
+
+    const copyBtn = document.createElement('button');
+    copyBtn.setAttribute("type", "button");
+    copyBtn.innerHTML = '<i class="fal fa-paste"></i>';
+
+    params.value = params.value
+
+    mainLink.innerText = params.value;
+    copyBtn.addEventListener("click", e => {
+        e.preventDefault();
+        const textarea = document.createElement('textarea');
+        textarea.style.width = "0";
+        textarea.style.height = "0";
+        textarea.innerText = params.value;
+        document.body.appendChild(textarea);
+        textarea.select();
+        document.execCommand('copy');
+        textarea.remove();
+
+        const target = e.target;
+        target.className = "active";
+        target.innerHTML = '<i class="fal fa-check"></i>';
+        setTimeout(() => {
+            target.className = "";
+            target.innerHTML = '<i class="fal fa-paste"></i>';
+        }, 2000);
+    })
+    cell.appendChild(mainLink);
+    cell.appendChild(copyBtn);
+    return cell;
+},
+</span>
+</pre>
+<br />
+
+<!-- <h4>Predefined layouts</h4>
             <p>Rows can be modified to apply predefined layouts to the columns inside them, effectively reducing the
               amount of work required for simple layouts. To create a predefined layout, you can add a class to a row
               (<code>.cols-*-*</code>), specifying a screen size and width for the columns inside it (or omitting the
@@ -1502,14 +1855,18 @@
                 >
                 role.
               </p> -->
-              <p>button details</p>
+              <p>
+                A basic button includes icon, text, and action-icon.<br />
+                There're 4 types of buttons and you can simply remove a certain wrapper in order to make a button that you want.<br />
+                Here are simple form and examples which starts with (<code>div</code>).
+              </p>
             </div>
             <div class="section">
-              <h3>Example</h3>
+              <h5>Example</h5>
               <div class="button main-button">
                 <div class="btn-wrapper">
                     <div class="btn-icon-wrapper">
-                        <icon class="brand-icon-amazon"></icon>
+                      <i class="fab fa-amazon"></i>
                     </div>
                     <div class="btn-text-wrapper">
                         <p>Button</p>
@@ -1519,6 +1876,36 @@
                   </div>
                 </div>
             </div>
+
+            <div class="button main-button">
+              <div class="btn-wrapper">
+                  <div class="btn-icon-wrapper">
+                    <i class="fab fa-amazon"></i>
+                  </div>
+                  <div class="btn-text-wrapper">
+                      <p>Button</p>
+                  </div>
+              </div>
+            </div>
+
+            <div class="button main-button">
+              <div class="btn-wrapper">
+                  <div class="btn-text-wrapper">
+                      <p>Button</p>
+                  </div>
+                  <div class="btn-info-wrapper">
+                    <icon class="icon-arrow-down"></icon>
+                </div>
+              </div>
+          </div>
+
+            <div class="button main-button">
+              <div class="btn-wrapper">
+                  <div class="btn-text-wrapper">
+                      <p>Button</p>
+                  </div>
+              </div>
+          </div>
               <!-- <a href="#" class="button doc">Link</a>
               <label class="button doc">Label</label>
               <button disabled class="doc">Disabled</button> -->
@@ -1545,34 +1932,92 @@
             <div class="section double-padded prefiller-example">
               <h3>Modifiers</h3>
               <h4>Color variants</h4>
-              <!-- <p>
-                To make your buttons stand out, you can give them a primary
-                (<code>.primary</code>), secondary (<code>.secondary</code>),
-                tertiary (<code>.tertiary</code>) or inversed
-                (<code>.inverse</code>) color palette.
-              </p> -->
+              <div class="section">
+                <br>
+                  You can simply change the (<code>className</code>) from the sample code above to make a button with a certain color.</br />
+                  There're 4 color types which are mint, mint-hover, warning, and warning-hover.</br /></br />
+                  * <code>button-wrapper</code> and other <code>wrappers</code> are needed depends on the button type you want.
+                </p>
+              </div>
               <h5>Example</h5>
-              <button class="primary doc">Primary</button>
-              <button class="secondary doc">Secondary</button>
+              <div class="button mint">
+                <div class="btn-wrapper">
+                    <div class="btn-text-wrapper">
+                        <p>Mint</p>
+                    </div>
+                </div>
+              </div>
+
+              <div class="button mint-hover">
+                <div class="btn-wrapper">
+                    <div class="btn-text-wrapper">
+                        <p>Mint-hover</p>
+                    </div>
+                </div>
+              </div>
+
+
+              <div class="button warning">
+                <div class="btn-wrapper">
+                    <div class="btn-text-wrapper">
+                        <p>Warning</p>
+                    </div>
+                </div>
+              </div>
+              
+              <div class="button warning-hover">
+                <div class="btn-wrapper">
+                    <div class="btn-text-wrapper">
+                        <p>Warning-hover</p>
+                    </div>
+                </div>
+              </div>
               <!-- <button class="tertiary doc">Tertiary</button>
               <button class="inverse doc">Inverse</button> -->
               <h5>Sample code</h5>
-              <pre><span class="code-line"><span class="highlight-a">&lt;button</span> <span class="highlight-b">class</span>=<span class="highlight-c">&quot;primary&quot;</span><span class="highlight-a">&gt;</span>Primary<span class="highlight-a">&lt;/button&gt;</span></span>
-<span class="code-line"><span class="highlight-a">&lt;button</span> <span class="highlight-b">class</span>=<span class="highlight-c">&quot;secondary&quot;</span><span class="highlight-a">&gt;</span>Secondary<span class="highlight-a">&lt;/button&gt;</span></span>
-<span class="code-line"><span class="highlight-a">&lt;button</span> <span class="highlight-b">class</span>=<span class="highlight-c">&quot;tertiary&quot;</span><span class="highlight-a">&gt;</span>Tertiary<span class="highlight-a">&lt;/button&gt;</span></span>
-<span class="code-line"><span class="highlight-a">&lt;button</span> <span class="highlight-b">class</span>=<span class="highlight-c">&quot;inverse&quot;</span><span class="highlight-a">&gt;</span>Inverse<span class="highlight-a">&lt;/button&gt;</span></span></pre>
+              <pre><span class="code-line"><span class="highlight-a">&lt;div</span> <span class="highlight-b">className</span>=<span class="highlight-c">&quot;button mint&quot;</span><span class="highlight-a">&gt;</span>Mint<span class="highlight-a">&lt;/div&gt;</span></span>
+<span class="code-line"><span class="highlight-a">&lt;div</span> <span class="highlight-b">className</span>=<span class="highlight-c">&quot;button mint-hover&quot;</span><span class="highlight-a">&gt;</span>Mint-hover<span class="highlight-a">&lt;/div&gt;</span></span>
+<span class="code-line"><span class="highlight-a">&lt;div</span> <span class="highlight-b">className</span>=<span class="highlight-c">&quot;button warning&quot;</span><span class="highlight-a">&gt;</span>Warning<span class="highlight-a">&lt;/div&gt;</span></span>
+<span class="code-line"><span class="highlight-a">&lt;div</span> <span class="highlight-b">className</span>=<span class="highlight-c">&quot;button warning-hover&quot;</span><span class="highlight-a">&gt;</span>Warning-hover<span class="highlight-a">&lt;/div&gt;</span></span></pre>
               <br />
               <h4>Size variants</h4>
-              <!-- <p>
-                You can make buttons smaller (<code>.small</code>) or larger
-                (<code>.large</code>), by applying the appropriate modifier.
-              </p> -->
+              <div class="section">
+                <br>
+                  You can simply change the (<code>className</code>) from the sample code above to make a button with a certain size.</br />
+                  There're 3 color types which are small, medium and large.</br /></br />
+                  * <code>button-wrapper</code> and other <code>wrappers</code> are needed depends on the button type you want.
+                </p>
+              </div>
               <h5>Example</h5>
-              <button class="small doc">Small</button
-              ><button class="large doc">Large</button>
+              <div class="button main-button">
+                  <div class="btn-wrapper">
+                      <div class="btn-text-wrapper">
+                          <p>Small</p>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="button main-button">
+                <div class="btn-wrapper">
+                    <div class="btn-text-wrapper">
+                        <p>Medium</p>
+                    </div>
+                </div>
+              </div>    
+          
+              <div class="button main-button">
+                <div class="btn-wrapper">
+                    <div class="btn-text-wrapper">
+                        <p>Large</p>
+                    </div>
+                </div>
+              </div>
+
               <h5>Sample code</h5>
-              <pre><span class="code-line"><span class="highlight-a">&lt;button</span> <span class="highlight-b">class</span>=<span class="highlight-c">&quot;small&quot;</span><span class="highlight-a">&gt;</span>Small<span class="highlight-a">&lt;/button&gt;</span></span>
-<span class="code-line"><span class="highlight-a">&lt;button</span> <span class="highlight-b">class</span>=<span class="highlight-c">&quot;large&quot;</span><span class="highlight-a">&gt;</span>Large<span class="highlight-a">&lt;/button&gt;</span></span></pre>
+              <pre><span class="code-line"><span class="highlight-a">&lt;div</span> <span class="highlight-b">className</span>=<span class="highlight-c">&quot;button small&quot;</span><span class="highlight-a">&gt;</span>Small<span class="highlight-a">&lt;/div&gt;</span></span>
+<span class="code-line"><span class="highlight-a">&lt;div</span> <span class="highlight-b">className</span>=<span class="highlight-c">&quot;button medium&quot;</span><span class="highlight-a">&gt;</span>Medium<span class="highlight-a">&lt;/div&gt;</span></span>
+<span class="code-line"><span class="highlight-a">&lt;div</span> <span class="highlight-b">className</span>=<span class="highlight-c">&quot;button large&quot;</span><span class="highlight-a">&gt;</span>Large<span class="highlight-a">&lt;/div&gt;</span></span>
+</pre>
             </div>
             <div class="section double-padded">
               <!-- <h3>Best practices</h3> -->

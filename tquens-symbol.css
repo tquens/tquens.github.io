@@ -1,0 +1,21 @@
+﻿icon::before {
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 500;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.brand-icon-amazon::before {
+  font-weight: 500;
+  content: "\f270";
+}
+
+.icon-arrow-down::before {
+  font-weight: 500;
+  content: "\f078";
+  font-size: 80%;
+  opacity: 50%;
+}

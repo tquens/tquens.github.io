@@ -1,0 +1,199 @@
+.ag-cell {
+  align-items: center !important;
+  display: flex !important;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.ag-header-row {
+  background-color: white;
+  border-bottom-color: white;
+}
+
+.ag-header-cell-text {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.ag-row-hover {
+  background-color: #eee !important;
+}
+
+
+/* [Table Cell] Image ---------------------------------------- */
+.cell-product-image {
+  width: 80px;
+}
+
+.cell-product-image .product-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  padding: 4px;
+  background-color: #ffffff;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+}
+
+.cell-product-image .product-image img {
+  max-width: 52px;
+  max-height: 52px;
+  object-fit: contain;
+}
+
+/* [Table Cell] Listing Status ---------------------------------------- */
+.cell-listing-status {
+  width: 100px;
+}
+
+.cell-link-wrapper .cell-content .text-content span {
+  font-weight: 600;
+  margin-left: 5px;
+}
+
+.cell-link-wrapper .cell-content .text-content span .small {
+  font-weight: 600 !important;
+}
+
+.inActive-span {
+  color: #bebebe;
+  font-size: 11px;
+}
+
+.cell-listing-status .status-inactive {
+  color: #f45144;
+}
+
+.cell-listing-status .status-active {
+  color: #22b573;
+}
+/* [Table Cell] SKU ---------------------------------------- */
+.cell-sku {
+  cursor: pointer;
+}
+
+.cell-sku .cell-content .text-content {
+  align-items: center;
+  display: flex !important;
+}
+
+.cell-sku .cell-content .text-content .span {
+  color: #0C71BC;
+  font-weight: 700 !important;
+}
+
+.cell-sku .cell-content .text-content .span p {
+  color: #0C71BC !important;
+}
+
+.cell-content div[class*="-content"] .call-to-action {
+  margin-left: 5px;
+}
+
+.cell-content .call-to-action {
+  display: inline;
+  font-size: 12px;
+  color: #d9d9d9 !important;
+}
+
+/* [Table Cell] Product Title ---------------------------------------- */
+.cell-product-title .cell-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.cell-product-title .cell-wrapper .cell-content {
+  max-width: 100%;
+  /* white-space: normal; */
+  text-overflow: unset;
+  line-height: 13px;
+}
+
+/* 
+.cell-product-title .cell-wrapper .cell-content .text-content {
+  display: flex;
+  align-items: center;
+} */
+
+/* .cell-product-title .cell-wrapper .cell-content .text-content .module {
+  width: 100%;
+  overflow: hidden !important;
+  margin: 0;
+}
+
+.cell-product-title .cell-wrapper .cell-content .text-content .module .line-clamp {
+  display: -webkit-box !important;
+  -webkit-line-clamp: 2 !important;
+  -webkit-box-orient: vertical !important;
+} */
+
+/* [Table Cell] Date ---------------------------------------- */
+.cell-date-updated, cell-date-created {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.cell-date-updated .cell-text-main, cell-date-created .cell-text-main {
+  font-size: 13px;
+  line-height: 1.25;
+  font-weight: 600;
+  margin: 0;
+}
+
+.cell-date-updated .cell-text-main .cell-text-sub-alt, cell-date-created .cell-text-main .cell-text-sub-alt {
+  font-size: 13px;
+  line-height: 1.25;
+  font-weight: 600;
+  color: #888;
+  margin: 0;
+}
+
+/* [Table Cell] Price ---------------------------------------- */
+.cell-price {
+  margin: 0;
+  line-height: 1;
+  font-size: 12px;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  width: 100%;
+  display: flex;
+}
+
+.cell-copy {
+  display: flex;
+  align-items: center;
+}
+
+.cell-copy a {
+  width: 110px;
+  overflow: hidden;
+  font-weight: 600;
+}
+
+.cell-copy button {
+  margin-left: 6px;
+  padding: 8px;
+  background: none;
+  border: solid thin #eee;
+  border-radius: 4px;
+  line-height: 1;
+  color: #9f9f9f;
+}
+
+.cell-copy a button i {
+  user-select: none;
+  pointer-events: none;
+}
+.cell-copy a button i:hover {
+  border-color: #ccc;
+  color: #555;
+}
+.cell-copy a button i .active {
+  color: #fff;
+  background-color: #66CCCC;
+  border-color: #66CCCC !important;
+}

@@ -27,17 +27,17 @@ q,
 span,
 strong,
 u {
-  font-size: 1em;
+  /* font-size: 1em; */
 }
 html,
 * {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu,
-    "Helvetica Neue", Helvetica, sans-serif;
+  font-family: 'Ubuntu', 'Nanum Gothic', sans-serif;
+  font-weight: 500;
   line-height: 1.5;
   -webkit-text-size-adjust: 100%;
 }
 * {
-  font-size: 1rem;
+  /* font-size: 1rem; */
 }
 body {
   margin: 0;
@@ -756,7 +756,7 @@ label {
   flex-grow: 1;
   flex-basis: 0px;
 }
-[type="number"]::-webkit-inner-spin-button,
+/* [type="number"]::-webkit-inner-spin-button,
 [type="number"]::-webkit-outer-spin-button {
   height: auto;
 }
@@ -767,7 +767,7 @@ label {
 [type="search"]::-webkit-search-cancel-button,
 [type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
-}
+} */
 input:not([type]),
 [type="text"],
 [type="email"],
@@ -788,7 +788,7 @@ select {
   margin: calc(var(--universal-margin) / 2);
   padding: var(--universal-padding) calc(1.5 * var(--universal-padding));
 }
-input:not([type="button"]):not([type="submit"]):not([type="reset"]):hover,
+/* input:not([type="button"]):not([type="submit"]):not([type="reset"]):hover,
 input:not([type="button"]):not([type="submit"]):not([type="reset"]):focus,
 textarea:hover,
 textarea:focus,
@@ -810,7 +810,7 @@ input:not([type="button"]):not([type="submit"]):not([type="reset"])[readonly],
 textarea[readonly],
 select[readonly] {
   background: var(--secondary-back-color);
-}
+} */
 select {
   max-width: 100%;
 }
@@ -861,7 +861,7 @@ option {
   color: var(--input-fore-color);
   opacity: 0.54;
 }
-button::-moz-focus-inner,
+/* button::-moz-focus-inner,
 [type="button"]::-moz-focus-inner,
 [type="reset"]::-moz-focus-inner,
 [type="submit"]::-moz-focus-inner {
@@ -1080,7 +1080,7 @@ button.large,
   padding: calc(1.5 * var(--universal-padding))
     calc(2 * var(--universal-padding));
   margin: var(--universal-margin);
-}
+} */
 :root {
   --header-back-color: #f8f8f8;
   --header-hover-back-color: #f0f0f0;
@@ -1119,7 +1119,7 @@ header .logo {
   padding: var(--universal-padding) calc(2 * var(--universal-padding));
   text-decoration: none;
 }
-header button,
+/* header button,
 header [type="button"],
 header .button,
 header [role="button"] {
@@ -1145,7 +1145,7 @@ header .button:focus,
 header [role="button"]:hover,
 header [role="button"]:focus {
   background: var(--header-hover-back-color);
-}
+} */
 nav {
   background: var(--nav-back-color);
   color: var(--nav-fore-color);
@@ -2138,7 +2138,7 @@ p.splash {
 .card li:not(.doc) {
   text-align: justify;
 }
-a.button.splash {
+/* a.button.splash {
   position: absolute;
   top: 65vh;
   width: 50vw;
@@ -2153,8 +2153,8 @@ a.button.splash:hover {
   background: #f22f21;
   color: #f8f8f8;
   border-color: #f22f21;
-}
-@media screen and (min-width: 768px) {
+} */
+/* @media screen and (min-width: 768px) {
   a.button.splash {
     width: 30vw;
     left: 35vw;
@@ -2165,7 +2165,7 @@ a.button.splash:hover {
     width: 25vw;
     left: 37.5vw;
   }
-}
+} */
 #version-info {
   position: absolute;
   bottom: 0;
@@ -2570,224 +2570,14 @@ a#feather-banner svg {
   text-align: center;
 }
 
-
-
-
-
-
-/* custom css */
-
-/* Button::Normal Style -------------------- */
-.button {
-  display: inline-block;
-  border: solid thin #eee;
-  border-radius: 6px;
-  color: inherit;
-  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-  cursor: pointer;
-}
-
-.button .btn-wrapper {
-  display: flex;
-  align-items: center;
-  padding-left: 10px;
-  padding-right: 10px;
-  height: 40px !important;
-  text-decoration: none;
-}
-
-nav .main-menu-wrapper .button .btn-wrapper icon,
-nav .main-menu-wrapper .button .btn-wrapper p {
-  color: rgba(255, 255, 255, 0.75);
-}
-
-nav .sub-menu-wrapper .button .btn-wrapper icon,
-nav .sub-menu-wrapper .button .btn-wrapper p {
-  color: #4D4D4D;
-}
-
-nav .main-menu-wrapper .button .btn-wrapper,
-main .sub-menu-wrapper .button .btn-wrapper {
-  justify-content: flex-start;
-}
-
-.button .btn-wrapper .btn-icon-wrapper {
-  width: 40px;
-  height: 40px;
-  border-radius: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: -10px;
-}
-
-.button .btn-text-wrapper {
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-.button .btn-text-wrapper p {
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1.45;
-  margin-bottom: 0px;
-}
-
-.button .btn-text-wrapper .small {
-  font-size: 12px;
-  font-weight: 500;
-  line-height: normal;
-  margin-bottom: 0px;
-}
-
-.button .btn-wrapper .btn-info-wrapper {
-  width: auto;
-  height: 20px;
-  border-radius: 4px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-}
-
-.button .btn-wrapper div[class^="btn-"]:nth-child(3) {
-  margin-left: auto;
-}
-
-/* Button::additional buttons Style -------------------- */
-.button.btn-rounded {
-  border-radius: 20px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-
-/* Bootstrap CSS Override CSS */
-.btn-info-wrapper.dropend .dropdown-toggle::after {
-  content: none;
-}
-
-/* Button::Brand buttons Style -------------------- */
-.dropdown-menu {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  z-index: 1000;
-  display: none;
-  min-width: 10rem;
-  padding: 10px;
-  font-size: 14px;
-  color: #212529;
-  text-align: left;
-  list-style: none;
-  background-color: #fff;
-  background-clip: padding-box;
-  border: 1px solid transparent;
-  border-radius: 10px;
-  box-shadow: 0px 20px 20px 20px rgb(0 0 0 / 5%);
-}
-
-.dropdown-item-label {
-  display: block;
-  width: 100%;
-  padding: .25rem 1rem;
-  clear: both;
-  font-weight: 600;
-  color: #212529;
-  text-align: inherit;
-  text-decoration: none;
-  white-space: nowrap;
-  background-color: transparent;
+.section {
+  background: var(--card-back-color);
+  color: var(--card-fore-color);
+  box-sizing: border-box;
+  margin: 0;
   border: 0;
-  border-radius: 4px;
-
-}
-.dropdown-item {
-  display: block;
+  border-radius: 0;
+  border-bottom: 0.0625rem solid var(--card-border-color);
+  padding: var(--universal-padding);
   width: 100%;
-  padding: .25rem 1rem;
-  clear: both;
-  font-weight: 400;
-  color: #212529;
-  text-align: inherit;
-  text-decoration: none;
-  white-space: nowrap;
-  background-color: transparent;
-  border: 0;
-  border-radius: 4px;
-}
-
-.ropdown-item:focus,
-.dropdown-item:hover {
-  color: #ffffff;
-  background-color: #66CCCC;
-}
-
-
-.main-button {
-  padding: 0px !important;
-}
-
-.btn-text-wrapper {
-  p{
-    margin: 0px !important;
-  }
-}
-
-
-.btn {
-  border: thin solid #eee;
-  background-color: white;
-  border-radius: 6px;
-}
-.btn:hover {
-  background-color: #66CCCC;
-
-}
-.btn:hover .btn-text-wrapper {
-  color: white;
-}
-
-.button.fixed-button.btn-action {
-  display: inline-block;
-  color: inherit;
-  transition: color .15s;
-}
-
-.fixed-button .btn-wrapper {
-  width: 120px;
-  justify-content: center;
-}
-
-.btn-wrapper {
-  width: 140px;
-  justify-content: center;
-  display: flex;
-  align-items: center;
-  height: 30px !important;
-  text-decoration: none;
-}
-
-.btn-text-wrapper {
-  margin-left: 10px;
-  margin-right: 10px;
-  white-space: nowrap;
-}
-
-.button {
-  display: inline-block;
-  border: solid thin #eee;
-  border-radius: 6px;
-  color: inherit;
-  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out !important;
-  cursor: pointer;
-}
-
-.button .btn-wrapper {
-  display: flex;
-  align-items: center;
-  padding-left: 10px;
-  padding-right: 10px;
-  height: 40px;
-  text-decoration: none;
 }
