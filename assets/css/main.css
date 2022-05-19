@@ -9959,6 +9959,8 @@ height: 130px;
   align-items: center;
   justify-content: center;
   width: 100%;
+  margin-bottom: 10px;
+  gap: 10px;
 }
 
 
@@ -9971,8 +9973,16 @@ height: 130px;
   cursor: pointer;
 }
 
-
 .module-wrapper--item:hover {
   background-color: #66CCCC;
   color: white;
+}
+
+.module-wrapper--item:hover a {
+  color: white;
+}
+
+.module-wrapper--item a {
+  color: black;
+  text-decoration: none;
 }
