@@ -9950,8 +9950,29 @@ height: 130px;
   margin-left: 4px;
 }
 
-
-
 .section-wrapper {
   margin-top: 500px;
+}
+
+.module-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+
+.module-wrapper--item {
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  border: 1px solid #66CCCC;
+  border-radius: 8px;
+  white-space: nowrap;
+  padding: 10px;
+  cursor: pointer;
+}
+
+
+.module-wrapper--item:hover {
+  background-color: #66CCCC;
+  color: white;
 }
